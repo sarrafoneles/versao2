@@ -1,0 +1,140 @@
+/* Main styles */
+
+body {
+	font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	overflow: hidden;
+	margin: 0;
+	color: #cecece;
+	background: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+}
+
+a:hover {
+	color: #ddd;
+}
+
+.container {
+	overflow-y: auto;
+	height: 100vh;
+}
+
+
+/* Blueprint header */
+
+
+
+.dummy-logo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 120px;
+	padding: 1em 0 0 0;
+	text-align: center;
+	color: #3b3d4a;
+	background: #A0E1E7;
+}
+
+.dummy-icon {
+	font-size: 4em;
+}
+
+.dummy-heading {
+	font-size: 0.75em;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+    color: #FAFAFB;
+}
+
+.content {
+	position: relative;
+	min-height: 300px;
+	margin: 0 0 0 300px;
+}
+
+.content--loading {
+	background: url(../img/loading.svg) no-repeat 50% 50%;
+}
+
+.products {
+	margin: 0;
+	padding: 0.1em;
+	text-align: center;
+}
+
+.product {
+	display: block;
+	padding: 10px;
+    margin: 20px;
+	border-radius: 5px;
+	background: #8FB5E9;
+}
+
+.product .foodicon {
+	font-size: 1.1em;
+	line-height: 45px;
+	color: #fff;
+}
+
+.info {
+	font-size: 3.1em; /*Tamanho da letra */
+	font-weight: bold;
+	padding: 0vh 1em 0;
+	text-align: center;
+	color: #2b7eec;
+}
+
+.content-wrap{
+     color: black;
+    text-align: center;
+    grid-column: 2/4;
+    padding: 0 2.5em;
+    font-weight: bold;
+  }
+
+body #cdawrap {
+	top: auto;
+	bottom: 15px;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+body #cdawrap .carbon-text {
+	color: #fafafb;
+}
+
+body #cdawrap a.carbon-poweredby {
+	color: #7883c4;
+}
+
+body #cdawrap a:hover.carbon-poweredby {
+	color: #fff;
+}
+
+@media screen and (max-width: 40em) {
+	.bp-header {
+		padding-top: 0em;
+	}
+	.bp-header__main,
+	.bp-nav {
+		width: 100%;
+		text-align: center;
+	}
+	.dummy-logo {
+		display: none;
+	}
+	.content {
+		margin: 0;
+	}
+	body,
+	.container {
+		height: auto;
+		overflow: auto;
+	}
+}
